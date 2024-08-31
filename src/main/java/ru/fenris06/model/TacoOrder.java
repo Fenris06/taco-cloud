@@ -2,6 +2,8 @@ package ru.fenris06.model;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
@@ -11,10 +13,12 @@ import java.util.Date;
 import java.util.List;
 
 @Data
+@Table
 public class TacoOrder {
     private final static long serialVersionUID = 1L;
+    @Id
     private Long id;
-    private Date placedAt;
+    private Date placedAt = new Date();
     @NotBlank(message = "Delivery name is required")
     private String deliveryName;
     @NotBlank(message = "Street is required")
