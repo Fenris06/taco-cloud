@@ -2,8 +2,10 @@ package ru.fenris06.model;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
+import org.springframework.data.cassandra.core.mapping.Column;
+import org.springframework.data.cassandra.core.mapping.PrimaryKey;
+import org.springframework.data.cassandra.core.mapping.Table;
 
-import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -13,11 +15,10 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@Entity
+@Table("orders")
 public class TacoOrder implements Serializable {
     private final static long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @PrimaryKey
     private Long id;
     private Date placedAt = new Date();
     @NotBlank(message = "Delivery name is required")
@@ -37,10 +38,10 @@ public class TacoOrder implements Serializable {
     private String ccExpiration;
     @Digits(integer = 3, fraction = 0, message = "Invalid CVV")
     private String ccCVV;
-    @OneToMany(cascade = CascadeType.ALL)
-    private List<Taco> tacos = new ArrayList<>();
+    @Column("tacos")  // <3>
+    private List<TacoUDT> tacos = new ArrayList<>();
 
-    public void addTaco(Taco taco) {
+    public void addTaco(TacoUDT taco) {
         this.tacos.add(taco);
     }
 }
