@@ -5,6 +5,6 @@ import ru.fenris06.model.TacoOrder;
 
 import java.util.UUID;
 
-public interface OrderRepository extends CrudRepository<TacoOrder, UUID> {
+public interface OrderRepository extends CrudRepository<TacoOrder, String> {
 
 }
