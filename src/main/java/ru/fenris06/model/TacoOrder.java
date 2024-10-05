@@ -2,9 +2,8 @@ package ru.fenris06.model;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
+import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
@@ -14,10 +13,12 @@ import java.util.Date;
 import java.util.List;
 
 @Data
-@Document
+@Entity
+@Table(name = "Taco_Order")
 public class TacoOrder implements Serializable {
     private final static long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     private Date placedAt = new Date();
     @NotBlank(message = "Delivery name is required")
@@ -37,8 +38,10 @@ public class TacoOrder implements Serializable {
     private String ccExpiration;
     @Digits(integer = 3, fraction = 0, message = "Invalid CVV")
     private String ccCVV;
+    @ManyToMany(targetEntity=Taco.class)
     private List<Taco> tacos = new ArrayList<>();
-
+    @ManyToOne
+    private User user;
     public void addTaco(Taco taco) {
         this.tacos.add(taco);
     }
