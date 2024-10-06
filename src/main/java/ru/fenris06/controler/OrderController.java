@@ -2,8 +2,12 @@ package ru.fenris06.controler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -20,8 +24,10 @@ import javax.validation.Valid;
 @RequestMapping("/orders")
 @SessionAttributes("tacoOrder")
 @Slf4j
+@ConfigurationProperties(prefix = "taco.order")
 public class OrderController {
     private final OrderRepository orderRepo;
+    private int pageSize = 20;
 
     @Autowired
     public OrderController(OrderRepository orderRepo) {
@@ -41,6 +47,15 @@ public class OrderController {
         orderRepo.save(tacoOrder);
         sessionStatus.setComplete();
         return "redirect:/";
+    }
+
+    @GetMapping
+    public String ordersForUser(@AuthenticationPrincipal User user, Model model) {
+
+        Pageable pageable = PageRequest.of(0, pageSize);
+
+        model.addAttribute("orders", orderRepo.findByUserOrderByPlacedAtDesc(user, pageable));
+        return "ordersList";
     }
 
 

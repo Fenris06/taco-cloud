@@ -1,4 +1,35 @@
 spring:
+  profile:
+    active:
+    - test
+    - prod
+
+---
+
+spring:
+  profiles: test
+
+
+
+logging:
+  file:
+    name: TacoCloud.log
+
+
+taco:
+  orders:
+    pageSize: 10
+
+---
+spring:
+  profiles: prod
+
+
+logging:
+  file:
+    name: TacoCloudProd.log
+---
+spring:
   datasource:
     generate-unique-name: false
     name: tacocloud
