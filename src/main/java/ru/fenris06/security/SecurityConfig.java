@@ -41,7 +41,7 @@ public class SecurityConfig {
         return http
                 .authorizeRequests()
                 .antMatchers("/design", "/orders").access("hasRole('USER')")
-                .antMatchers("/", "/**").access("permitAll")
+                .antMatchers("/", "/**", "/h2-console/**").access("permitAll")
                 .and()
                 .formLogin()
                 .loginPage("/login")
@@ -49,6 +49,9 @@ public class SecurityConfig {
                 .and()
                 .logout()
                 .logoutSuccessUrl("/")
+                .and()
+                .csrf().disable()
+                .headers().frameOptions().disable()
                 .and()
                 .build();
     }
