@@ -1,671 +1,143 @@
-2024-10-13 13:52:14.926  INFO 20644 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 20644 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 13:52:14.933  INFO 20644 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 13:52:14.988  WARN 20644 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 13:52:14.989  WARN 20644 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 13:52:14.991  INFO 20644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 13:52:14.991  INFO 20644 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 13:52:15.690  INFO 20644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 13:52:15.759  INFO 20644 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
-2024-10-13 13:52:16.579  INFO 20644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 13:52:16.589  INFO 20644 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 13:52:16.589  INFO 20644 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 13:52:16.683  INFO 20644 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 13:52:16.683  INFO 20644 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1691 ms
-2024-10-13 13:52:16.726  INFO 20644 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 13:52:16.917  INFO 20644 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 13:52:16.925  INFO 20644 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 13:52:17.059  INFO 20644 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 13:52:17.129  INFO 20644 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 13:52:17.282  INFO 20644 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 13:52:17.435  INFO 20644 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 13:52:18.175  INFO 20644 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 13:52:18.181  INFO 20644 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 13:52:18.706  INFO 20644 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@173b76, org.springframework.security.web.context.SecurityContextPersistenceFilter@3791f7c1, org.springframework.security.web.header.HeaderWriterFilter@61a148aa, org.springframework.security.web.csrf.CsrfFilter@6eb6eb37, org.springframework.security.web.authentication.logout.LogoutFilter@4ba9aaae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64622d8d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6ae52571, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52f51c12, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@428fbba, org.springframework.security.web.session.SessionManagementFilter@40823f9c, org.springframework.security.web.access.ExceptionTranslationFilter@30425be5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5be5d6c9]
-2024-10-13 13:52:18.755  WARN 20644 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 13:52:19.144  INFO 20644 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 13:52:19.175  INFO 20644 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 13:52:19.187  INFO 20644 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.827 seconds (JVM running for 5.471)
-2024-10-13 13:59:54.441  INFO 20644 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 13:59:54.442  INFO 20644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 13:59:54.444  INFO 20644 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 13:59:54.501 ERROR 20644 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property createAt found for type Taco! Did you mean 'createdAt'?] with root cause
-
-org.springframework.data.mapping.PropertyReferenceException: No property createAt found for type Taco! Did you mean 'createdAt'?
-	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.jpa.repository.query.QueryUtils.toJpaOrder(QueryUtils.java:601) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at org.springframework.data.jpa.repository.query.QueryUtils.toOrders(QueryUtils.java:554) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:754) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:708) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:484) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:451) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.3.jar:2.5.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.3.jar:2.5.3]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
-	at com.sun.proxy.$Proxy110.findAll(Unknown Source) ~[na:na]
-	at ru.fenris06.controler.TacoController.recentTaco(TacoController.java:25) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.50.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:121) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:105) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:218) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.5.1.jar:5.5.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.50.jar:9.0.50]
-	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
-
-2024-10-13 14:01:49.045  INFO 20644 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:01:49.045  INFO 20644 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:01:49.273  WARN 20644 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+2024-11-23 10:49:42.744  INFO 768 --- [restartedMain] fenris06.TacoCloudApplication            : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 768 (D:\New_Java_Projects\taco-cloud\taco-cloud-service\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
+2024-11-23 10:49:42.757  INFO 768 --- [restartedMain] fenris06.TacoCloudApplication            : The following profiles are active: test
+2024-11-23 10:49:42.809  WARN 768 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
+2024-11-23 10:49:42.810  WARN 768 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
+2024-11-23 10:49:42.812  INFO 768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-23 10:49:42.812  INFO 768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-23 10:49:43.566  INFO 768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-23 10:49:43.628  INFO 768 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+2024-11-23 10:49:44.585  INFO 768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-11-23 10:49:44.596  INFO 768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-23 10:49:44.597  INFO 768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-11-23 10:49:44.698  INFO 768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-23 10:49:44.698  INFO 768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1885 ms
+2024-11-23 10:49:44.755  INFO 768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2024-11-23 10:49:44.941  INFO 768 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2024-11-23 10:49:44.948  INFO 768 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
+2024-11-23 10:49:45.168  INFO 768 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-23 10:49:45.217  INFO 768 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-23 10:49:45.351  INFO 768 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-23 10:49:45.487  INFO 768 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-23 10:49:46.152  INFO 768 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-23 10:49:46.157  INFO 768 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 10:49:46.785  WARN 768 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-23 10:49:47.148  INFO 768 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f95da6, org.springframework.security.web.context.SecurityContextPersistenceFilter@2cb13ad5, org.springframework.security.web.header.HeaderWriterFilter@66d071e9, org.springframework.security.web.authentication.logout.LogoutFilter@5bc6946e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3af0d012, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65733ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d9d8529, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b559101, org.springframework.security.web.session.SessionManagementFilter@60b33238, org.springframework.security.web.access.ExceptionTranslationFilter@1ac4f0c1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9f69923]
+2024-11-23 10:49:47.542  WARN 768 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-11-23 10:49:47.817  INFO 768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-23 10:49:47.850  INFO 768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-23 10:49:47.861  INFO 768 --- [restartedMain] fenris06.TacoCloudApplication            : Started TacoCloudApplication in 5.676 seconds (JVM running for 6.282)
+2024-11-23 10:49:56.691  INFO 768 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 10:49:56.692  INFO 768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-23 10:49:56.693  INFO 768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-23 10:50:25.980  INFO 768 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 10:50:25.981  INFO 768 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-11-23 10:50:26.196  WARN 768 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:01:49.274  INFO 20644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:01:49.279  INFO 20644 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:01:53.640  INFO 25808 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 25808 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:01:53.643  INFO 25808 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:01:53.699  WARN 25808 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:01:53.699  WARN 25808 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:01:53.702  INFO 25808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:01:53.702  INFO 25808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:01:54.448  INFO 25808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:01:54.519  INFO 25808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:01:55.324  INFO 25808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:01:55.336  INFO 25808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:01:55.337  INFO 25808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:01:55.436  INFO 25808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:01:55.436  INFO 25808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1733 ms
-2024-10-13 14:01:55.471  INFO 25808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:01:55.687  INFO 25808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:01:55.694  INFO 25808 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:01:55.837  INFO 25808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:01:55.913  INFO 25808 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:01:56.044  INFO 25808 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:01:56.179  INFO 25808 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:01:56.866  INFO 25808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:01:56.873  INFO 25808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:01:57.380  INFO 25808 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@402b2fb6, org.springframework.security.web.context.SecurityContextPersistenceFilter@1bd16d36, org.springframework.security.web.header.HeaderWriterFilter@35d8daef, org.springframework.security.web.csrf.CsrfFilter@287a1d76, org.springframework.security.web.authentication.logout.LogoutFilter@4d615b5d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12a15628, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d3e4abc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c5b1ed5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60184cf0, org.springframework.security.web.session.SessionManagementFilter@590eaa72, org.springframework.security.web.access.ExceptionTranslationFilter@2dd8a0f7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7ca3eeaf]
-2024-10-13 14:01:57.431  WARN 25808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:01:57.787  INFO 25808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:01:57.826  INFO 25808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:01:57.835  INFO 25808 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.731 seconds (JVM running for 5.321)
-2024-10-13 14:02:03.371  INFO 25808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:02:03.372  INFO 25808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:02:03.373  INFO 25808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 14:09:20.463  INFO 25808 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:09:20.464  INFO 25808 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:09:20.692  WARN 25808 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+2024-11-23 10:50:26.197  INFO 768 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2024-11-23 10:50:26.202  INFO 768 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2024-11-23 11:23:16.703  INFO 19668 --- [restartedMain] fenris06.TacoCloudApplication            : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 19668 (D:\New_Java_Projects\taco-cloud\taco-cloud-service\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
+2024-11-23 11:23:16.707  INFO 19668 --- [restartedMain] fenris06.TacoCloudApplication            : The following profiles are active: test
+2024-11-23 11:23:16.757  WARN 19668 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
+2024-11-23 11:23:16.757  WARN 19668 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
+2024-11-23 11:23:16.760  INFO 19668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-23 11:23:16.761  INFO 19668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-23 11:23:17.512  INFO 19668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-23 11:23:17.588  INFO 19668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2024-11-23 11:23:18.584  INFO 19668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-11-23 11:23:18.596  INFO 19668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-23 11:23:18.597  INFO 19668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-11-23 11:23:18.688  INFO 19668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-23 11:23:18.689  INFO 19668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1928 ms
+2024-11-23 11:23:18.740  INFO 19668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2024-11-23 11:23:18.954  INFO 19668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2024-11-23 11:23:18.963  INFO 19668 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
+2024-11-23 11:23:19.169  INFO 19668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-23 11:23:19.223  INFO 19668 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-23 11:23:19.361  INFO 19668 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-23 11:23:19.507  INFO 19668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-23 11:23:20.207  INFO 19668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-23 11:23:20.217  INFO 19668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 11:23:20.855  WARN 19668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-23 11:23:21.230  INFO 19668 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51766021, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c31461e, org.springframework.security.web.header.HeaderWriterFilter@6003da79, org.springframework.security.web.authentication.logout.LogoutFilter@750f798c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24326383, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@67164ff5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73b44510, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f18aa92, org.springframework.security.web.session.SessionManagementFilter@169a841b, org.springframework.security.web.access.ExceptionTranslationFilter@2d142679, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6c7469dd]
+2024-11-23 11:23:21.632  WARN 19668 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-11-23 11:23:22.116  INFO 19668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-23 11:23:22.153  INFO 19668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-23 11:23:22.165  INFO 19668 --- [restartedMain] fenris06.TacoCloudApplication            : Started TacoCloudApplication in 6.04 seconds (JVM running for 6.627)
+2024-11-23 11:24:00.429  INFO 19668 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 11:24:00.430  INFO 19668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-23 11:24:00.432  INFO 19668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-23 11:25:23.302  WARN 19668 --- [http-nio-8080-exec-4] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [122] milliseconds.
+2024-11-23 11:26:06.766  INFO 19668 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 11:26:06.766  INFO 19668 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-11-23 11:26:06.978  WARN 19668 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:09:20.693  INFO 25808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:09:20.698  INFO 25808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:09:26.445  INFO 18044 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 18044 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:09:26.449  INFO 18044 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:09:26.497  WARN 18044 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:09:26.497  WARN 18044 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:09:26.500  INFO 18044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:09:26.500  INFO 18044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:09:27.240  INFO 18044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:09:27.309  INFO 18044 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:09:28.129  INFO 18044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:09:28.144  INFO 18044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:09:28.145  INFO 18044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:09:28.235  INFO 18044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:09:28.236  INFO 18044 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1735 ms
-2024-10-13 14:09:28.271  INFO 18044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:09:28.468  INFO 18044 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:09:28.474  INFO 18044 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:09:28.647  INFO 18044 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:09:28.704  INFO 18044 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:09:28.824  INFO 18044 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:09:28.976  INFO 18044 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:09:29.655  INFO 18044 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:09:29.662  INFO 18044 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:09:30.211  INFO 18044 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@653cca13, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d6fa74a, org.springframework.security.web.header.HeaderWriterFilter@616b4e7d, org.springframework.security.web.csrf.CsrfFilter@53de4764, org.springframework.security.web.authentication.logout.LogoutFilter@6d77c097, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1a318952, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b1c24d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@588e0555, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f8bbe9e, org.springframework.security.web.session.SessionManagementFilter@20650666, org.springframework.security.web.access.ExceptionTranslationFilter@752caebd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7777476]
-2024-10-13 14:09:30.260  WARN 18044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:09:30.612  INFO 18044 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:09:30.642  INFO 18044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:09:30.652  INFO 18044 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.798 seconds (JVM running for 5.404)
-2024-10-13 14:09:46.826  INFO 18044 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:09:46.827  INFO 18044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:09:46.828  INFO 18044 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 14:10:16.249  INFO 18044 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:10:16.250  INFO 18044 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:10:16.474  WARN 18044 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
+2024-11-23 11:26:06.979  INFO 19668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2024-11-23 11:26:06.982  INFO 19668 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2024-11-23 11:26:11.634  INFO 9608 --- [restartedMain] fenris06.TacoCloudApplication            : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 9608 (D:\New_Java_Projects\taco-cloud\taco-cloud-service\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
+2024-11-23 11:26:11.637  INFO 9608 --- [restartedMain] fenris06.TacoCloudApplication            : The following profiles are active: test
+2024-11-23 11:26:11.691  WARN 9608 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
+2024-11-23 11:26:11.691  WARN 9608 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
+2024-11-23 11:26:11.693  INFO 9608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-23 11:26:11.694  INFO 9608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-23 11:26:12.668  INFO 9608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-23 11:26:12.799  INFO 9608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 4 JPA repository interfaces.
+2024-11-23 11:26:13.963  INFO 9608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-11-23 11:26:13.975  INFO 9608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-23 11:26:13.976  INFO 9608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-11-23 11:26:14.083  INFO 9608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-23 11:26:14.083  INFO 9608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2388 ms
+2024-11-23 11:26:14.146  INFO 9608 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2024-11-23 11:26:14.343  INFO 9608 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2024-11-23 11:26:14.351  INFO 9608 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
+2024-11-23 11:26:14.605  INFO 9608 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-23 11:26:14.665  INFO 9608 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-23 11:26:14.807  INFO 9608 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-23 11:26:14.941  INFO 9608 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-23 11:26:15.602  INFO 9608 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-23 11:26:15.608  INFO 9608 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 11:26:16.237  WARN 9608 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-23 11:26:16.587  INFO 9608 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d8faa22, org.springframework.security.web.context.SecurityContextPersistenceFilter@1ce67f26, org.springframework.security.web.header.HeaderWriterFilter@1138cd30, org.springframework.security.web.authentication.logout.LogoutFilter@6d1141f0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7dc5be66, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@208e7f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dfa2183, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7cb37b33, org.springframework.security.web.session.SessionManagementFilter@25dd74f3, org.springframework.security.web.access.ExceptionTranslationFilter@75c42866, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@8536e]
+2024-11-23 11:26:16.985  WARN 9608 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-11-23 11:26:17.277  INFO 9608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-23 11:26:17.313  INFO 9608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-23 11:26:17.322  INFO 9608 --- [restartedMain] fenris06.TacoCloudApplication            : Started TacoCloudApplication in 6.241 seconds (JVM running for 6.848)
+2024-11-23 11:26:22.252  INFO 9608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 11:26:22.254  INFO 9608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-23 11:26:22.256  INFO 9608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-23 11:27:29.318  INFO 9608 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 11:27:29.318  INFO 9608 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2024-11-23 11:27:29.536  WARN 9608 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:10:16.476  INFO 18044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:10:16.487  INFO 18044 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:19:49.195  INFO 12828 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 12828 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:19:49.198  INFO 12828 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:19:49.255  WARN 12828 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:19:49.255  WARN 12828 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:19:49.257  INFO 12828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:19:49.258  INFO 12828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:19:50.006  INFO 12828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:19:50.069  INFO 12828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:19:50.926  INFO 12828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:19:50.939  INFO 12828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:19:50.939  INFO 12828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:19:51.034  INFO 12828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:19:51.034  INFO 12828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1775 ms
-2024-10-13 14:19:51.070  INFO 12828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:19:51.247  INFO 12828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:19:51.254  INFO 12828 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:19:51.399  INFO 12828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:19:51.464  INFO 12828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:19:51.582  INFO 12828 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:19:51.716  INFO 12828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:19:52.396  INFO 12828 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:19:52.402  INFO 12828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:19:52.933  INFO 12828 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4313434c, org.springframework.security.web.context.SecurityContextPersistenceFilter@344c8918, org.springframework.security.web.header.HeaderWriterFilter@36acaeea, org.springframework.security.web.csrf.CsrfFilter@7075f98b, org.springframework.security.web.authentication.logout.LogoutFilter@5ef75d27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e7f6cb0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2346ace0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7dda4038, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ba7c1ac, org.springframework.security.web.session.SessionManagementFilter@3adf9715, org.springframework.security.web.access.ExceptionTranslationFilter@e9962d7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d62346f]
-2024-10-13 14:19:52.985  WARN 12828 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:19:53.342  INFO 12828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:19:53.371  INFO 12828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:19:53.380  INFO 12828 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.736 seconds (JVM running for 5.301)
-2024-10-13 14:20:23.625  INFO 12828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:20:23.627  INFO 12828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:20:23.627  INFO 12828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-10-13 14:20:59.895  INFO 12828 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:20:59.895  INFO 12828 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:21:00.121  WARN 12828 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:21:00.122  INFO 12828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:21:00.127  INFO 12828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:21:03.596  INFO 21188 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 21188 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:21:03.598  INFO 21188 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:21:03.650  WARN 21188 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:21:03.651  WARN 21188 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:21:03.653  INFO 21188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:21:03.654  INFO 21188 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:21:04.411  INFO 21188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:21:04.475  INFO 21188 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:21:05.291  INFO 21188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:21:05.302  INFO 21188 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:21:05.302  INFO 21188 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:21:05.393  INFO 21188 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:21:05.393  INFO 21188 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1739 ms
-2024-10-13 14:21:05.427  INFO 21188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:21:05.615  INFO 21188 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:21:05.623  INFO 21188 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:21:05.772  INFO 21188 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:21:05.821  INFO 21188 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:21:05.942  INFO 21188 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:21:06.065  INFO 21188 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:21:06.808  INFO 21188 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:21:06.815  INFO 21188 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:21:07.327  INFO 21188 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@23bbbc5c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e57a953, org.springframework.security.web.header.HeaderWriterFilter@3d7aa3f, org.springframework.security.web.csrf.CsrfFilter@464f6e90, org.springframework.security.web.authentication.logout.LogoutFilter@8975675, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@188703be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49f7c303, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3524b99a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76c519cf, org.springframework.security.web.session.SessionManagementFilter@51cb84e9, org.springframework.security.web.access.ExceptionTranslationFilter@59c1aa6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@74b4f7e6]
-2024-10-13 14:21:07.384  WARN 21188 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:21:07.766  INFO 21188 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:21:07.796  INFO 21188 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:21:07.807  INFO 21188 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.774 seconds (JVM running for 5.364)
-2024-10-13 14:21:13.950  INFO 21188 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:21:13.951  INFO 21188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:21:13.952  INFO 21188 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 14:26:39.561  INFO 21188 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:26:39.562  INFO 21188 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:26:39.788  WARN 21188 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:26:39.789  INFO 21188 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:26:39.797  INFO 21188 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:30:34.567  INFO 9880 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 9880 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:30:34.569  INFO 9880 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:30:34.620  WARN 9880 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:30:34.620  WARN 9880 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:30:34.622  INFO 9880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:30:34.623  INFO 9880 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:30:35.373  INFO 9880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:30:35.435  INFO 9880 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:30:36.261  INFO 9880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:30:36.275  INFO 9880 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:30:36.275  INFO 9880 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:30:36.365  INFO 9880 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:30:36.366  INFO 9880 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1742 ms
-2024-10-13 14:30:36.404  INFO 9880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:30:36.584  INFO 9880 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:30:36.590  INFO 9880 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:30:36.727  INFO 9880 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:30:36.807  INFO 9880 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:30:36.939  INFO 9880 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:30:37.055  INFO 9880 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:30:37.796  INFO 9880 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:30:37.802  INFO 9880 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:30:38.333  INFO 9880 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e0a508f, org.springframework.security.web.context.SecurityContextPersistenceFilter@63dbfdd5, org.springframework.security.web.header.HeaderWriterFilter@7ed8f338, org.springframework.security.web.csrf.CsrfFilter@193e1d7c, org.springframework.security.web.authentication.logout.LogoutFilter@623722ee, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13578a62, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c222267, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@61619530, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a11ed35, org.springframework.security.web.session.SessionManagementFilter@cf8c8ba, org.springframework.security.web.access.ExceptionTranslationFilter@4fd7bb41, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@67337f16]
-2024-10-13 14:30:38.380  WARN 9880 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:30:38.751  INFO 9880 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:30:38.782  INFO 9880 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:30:38.794  INFO 9880 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.817 seconds (JVM running for 5.389)
-2024-10-13 14:30:55.817  INFO 9880 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:30:55.818  INFO 9880 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:30:55.819  INFO 9880 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 14:31:56.454  INFO 9880 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:31:56.455  INFO 9880 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:31:56.673  WARN 9880 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:31:56.675  INFO 9880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:31:56.685  INFO 9880 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:32:02.719  INFO 10184 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 10184 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:32:02.721  INFO 10184 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:32:02.775  WARN 10184 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:32:02.776  WARN 10184 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:32:02.778  INFO 10184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:32:02.778  INFO 10184 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:32:03.556  INFO 10184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:32:03.624  INFO 10184 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:32:04.474  INFO 10184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:32:04.486  INFO 10184 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:32:04.487  INFO 10184 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:32:04.588  INFO 10184 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:32:04.588  INFO 10184 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1809 ms
-2024-10-13 14:32:04.635  INFO 10184 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:32:04.840  INFO 10184 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:32:04.849  INFO 10184 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:32:04.986  INFO 10184 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:32:05.047  INFO 10184 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:32:05.183  INFO 10184 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:32:05.315  INFO 10184 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:32:06.035  INFO 10184 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:32:06.040  INFO 10184 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:32:06.571  INFO 10184 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a5d391d, org.springframework.security.web.context.SecurityContextPersistenceFilter@6bbfe6c7, org.springframework.security.web.header.HeaderWriterFilter@242d9591, org.springframework.security.web.csrf.CsrfFilter@4eb6c1fa, org.springframework.security.web.authentication.logout.LogoutFilter@4b2fcbf2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@45e70f72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aedb20a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f5e1128, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@729d4959, org.springframework.security.web.session.SessionManagementFilter@59ee60bc, org.springframework.security.web.access.ExceptionTranslationFilter@311aff1f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b3378c2]
-2024-10-13 14:32:06.621  WARN 10184 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:32:06.999  INFO 10184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:32:07.032  INFO 10184 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:32:07.043  INFO 10184 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.903 seconds (JVM running for 5.482)
-2024-10-13 14:32:54.575  INFO 10184 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:32:54.577  INFO 10184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:32:54.578  INFO 10184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 14:33:38.603  INFO 10184 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:33:38.603  INFO 10184 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:33:38.829  WARN 10184 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:33:38.830  INFO 10184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:33:38.839  INFO 10184 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:33:43.468  INFO 26248 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 26248 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:33:43.471  INFO 26248 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:33:43.520  WARN 26248 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:33:43.520  WARN 26248 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:33:43.522  INFO 26248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:33:43.523  INFO 26248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:33:44.403  INFO 26248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:33:44.491  INFO 26248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:33:45.469  INFO 26248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:33:45.484  INFO 26248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:33:45.484  INFO 26248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:33:45.584  INFO 26248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:33:45.584  INFO 26248 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2060 ms
-2024-10-13 14:33:45.621  INFO 26248 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:33:45.841  INFO 26248 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:33:45.848  INFO 26248 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:33:45.986  INFO 26248 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:33:46.039  INFO 26248 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:33:46.188  INFO 26248 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:33:46.325  INFO 26248 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:33:47.287  INFO 26248 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:33:47.296  INFO 26248 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:33:47.864  INFO 26248 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bbb787f, org.springframework.security.web.context.SecurityContextPersistenceFilter@764420ed, org.springframework.security.web.header.HeaderWriterFilter@2d443a5d, org.springframework.security.web.csrf.CsrfFilter@51d0d347, org.springframework.security.web.authentication.logout.LogoutFilter@1e153717, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23adbafb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@57efd7d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c1228c0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b400aad, org.springframework.security.web.session.SessionManagementFilter@223737ef, org.springframework.security.web.access.ExceptionTranslationFilter@41c259e0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39667bb8]
-2024-10-13 14:33:47.912  WARN 26248 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:33:48.267  INFO 26248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:33:48.296  INFO 26248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:33:48.306  INFO 26248 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 5.405 seconds (JVM running for 6.052)
-2024-10-13 14:34:40.166  INFO 26248 --- [http-nio-8080-exec-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:34:40.169  INFO 26248 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:34:40.169  INFO 26248 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2024-10-13 14:34:43.952  WARN 26248 --- [http-nio-8080-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [110] milliseconds.
-2024-10-13 14:37:23.737  INFO 26248 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:37:23.738  INFO 26248 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:37:23.951  WARN 26248 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:37:23.953  INFO 26248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:37:23.961  INFO 26248 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:37:28.076  INFO 8996 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 8996 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:37:28.079  INFO 8996 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:37:28.130  WARN 8996 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:37:28.130  WARN 8996 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:37:28.132  INFO 8996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:37:28.133  INFO 8996 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:37:28.921  INFO 8996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:37:28.982  INFO 8996 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:37:29.806  INFO 8996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:37:29.820  INFO 8996 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:37:29.820  INFO 8996 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:37:29.919  INFO 8996 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:37:29.919  INFO 8996 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1786 ms
-2024-10-13 14:37:29.956  INFO 8996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:37:30.141  INFO 8996 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:37:30.147  INFO 8996 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:37:30.311  INFO 8996 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:37:30.363  INFO 8996 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:37:30.503  INFO 8996 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:37:30.632  INFO 8996 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:37:31.379  INFO 8996 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:37:31.386  INFO 8996 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:37:31.940  INFO 8996 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3576ea86, org.springframework.security.web.context.SecurityContextPersistenceFilter@3159083, org.springframework.security.web.header.HeaderWriterFilter@2e0edbc7, org.springframework.security.web.csrf.CsrfFilter@7a5d5720, org.springframework.security.web.authentication.logout.LogoutFilter@6ba768f9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@84963e3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@717510e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@165bc67a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69b1cad4, org.springframework.security.web.session.SessionManagementFilter@6fded568, org.springframework.security.web.access.ExceptionTranslationFilter@137607ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e2df013]
-2024-10-13 14:37:31.995  WARN 8996 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:37:32.383  INFO 8996 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:37:32.416  INFO 8996 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:37:32.426  INFO 8996 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.906 seconds (JVM running for 5.494)
-2024-10-13 14:37:40.518  INFO 8996 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 14:37:40.520  INFO 8996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 14:37:40.521  INFO 8996 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 14:41:26.957  INFO 8996 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:41:26.957  INFO 8996 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:41:27.177  WARN 8996 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:41:27.178  INFO 8996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:41:27.182  INFO 8996 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:43:25.667  INFO 17276 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 17276 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:43:25.669  INFO 17276 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:43:25.735  WARN 17276 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:43:25.735  WARN 17276 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:43:25.738  INFO 17276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:43:25.738  INFO 17276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:43:26.515  INFO 17276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:43:26.581  INFO 17276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:43:27.469  INFO 17276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:43:27.482  INFO 17276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:43:27.483  INFO 17276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:43:27.583  INFO 17276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:43:27.583  INFO 17276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1845 ms
-2024-10-13 14:43:27.618  INFO 17276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:43:27.798  INFO 17276 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:43:27.805  INFO 17276 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:43:27.964  INFO 17276 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:43:28.031  INFO 17276 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:43:28.168  INFO 17276 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:43:28.291  INFO 17276 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:43:29.064  INFO 17276 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:43:29.078  INFO 17276 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:43:29.612  INFO 17276 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49357ba8, org.springframework.security.web.context.SecurityContextPersistenceFilter@23b12e61, org.springframework.security.web.header.HeaderWriterFilter@2605d05e, org.springframework.security.web.csrf.CsrfFilter@42b6c8f4, org.springframework.security.web.authentication.logout.LogoutFilter@9a8ad6b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@121d97b9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@38ee4b33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f8b9747, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e153d70, org.springframework.security.web.session.SessionManagementFilter@5ed7d9b2, org.springframework.security.web.access.ExceptionTranslationFilter@5d783a8e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5b2fcc91]
-2024-10-13 14:43:29.662  WARN 17276 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:43:30.019  INFO 17276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:43:30.049  INFO 17276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:43:30.058  INFO 17276 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.954 seconds (JVM running for 5.524)
-2024-10-13 14:46:16.678  INFO 17276 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:46:16.679  INFO 17276 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:46:16.902  WARN 17276 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:46:16.903  INFO 17276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:46:16.906  INFO 17276 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 14:55:18.184  INFO 25660 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 25660 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 14:55:18.187  INFO 25660 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 14:55:18.239  WARN 25660 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 14:55:18.239  WARN 25660 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 14:55:18.241  INFO 25660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 14:55:18.241  INFO 25660 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 14:55:18.972  INFO 25660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 14:55:19.049  INFO 25660 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
-2024-10-13 14:55:19.866  INFO 25660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 14:55:19.880  INFO 25660 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 14:55:19.880  INFO 25660 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 14:55:19.973  INFO 25660 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 14:55:19.973  INFO 25660 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1731 ms
-2024-10-13 14:55:20.011  INFO 25660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 14:55:20.191  INFO 25660 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 14:55:20.199  INFO 25660 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 14:55:20.365  INFO 25660 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 14:55:20.423  INFO 25660 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 14:55:20.575  INFO 25660 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 14:55:20.703  INFO 25660 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 14:55:21.453  INFO 25660 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 14:55:21.460  INFO 25660 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:55:21.987  INFO 25660 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@297171fc, org.springframework.security.web.context.SecurityContextPersistenceFilter@72d7878a, org.springframework.security.web.header.HeaderWriterFilter@6911c771, org.springframework.security.web.authentication.logout.LogoutFilter@5ef2ddb7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7de19287, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@64492679, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70e7bbcc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18cab965, org.springframework.security.web.session.SessionManagementFilter@5eb426ea, org.springframework.security.web.access.ExceptionTranslationFilter@4c40ac4c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31e08573]
-2024-10-13 14:55:22.049  WARN 25660 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 14:55:22.430  INFO 25660 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 14:55:22.460  INFO 25660 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 14:55:22.468  INFO 25660 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.837 seconds (JVM running for 5.424)
-2024-10-13 14:57:25.269  INFO 25660 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 14:57:25.270  INFO 25660 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 14:57:25.497  WARN 25660 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 14:57:25.498  INFO 25660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 14:57:25.501  INFO 25660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 15:09:06.823  INFO 26144 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 26144 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 15:09:06.826  INFO 26144 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 15:09:06.877  WARN 26144 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 15:09:06.878  WARN 26144 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 15:09:06.880  INFO 26144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 15:09:06.881  INFO 26144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 15:09:07.593  INFO 26144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 15:09:07.670  INFO 26144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
-2024-10-13 15:09:08.459  INFO 26144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 15:09:08.471  INFO 26144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 15:09:08.471  INFO 26144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 15:09:08.567  INFO 26144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 15:09:08.567  INFO 26144 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1686 ms
-2024-10-13 15:09:08.612  INFO 26144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 15:09:08.807  INFO 26144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 15:09:08.814  INFO 26144 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 15:09:08.954  INFO 26144 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 15:09:09.007  INFO 26144 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 15:09:09.133  INFO 26144 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 15:09:09.241  INFO 26144 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 15:09:10.039  INFO 26144 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 15:09:10.046  INFO 26144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:09:10.575  INFO 26144 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79012836, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a27932e, org.springframework.security.web.header.HeaderWriterFilter@5f167270, org.springframework.security.web.authentication.logout.LogoutFilter@47f59915, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7525f98d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@355360a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40af1929, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47fa8b18, org.springframework.security.web.session.SessionManagementFilter@25c4d1b5, org.springframework.security.web.access.ExceptionTranslationFilter@4f560b22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@161560c5]
-2024-10-13 15:09:10.627  WARN 26144 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 15:09:10.880  WARN 26144 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2024-10-13 15:09:10.979  INFO 26144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 15:09:11.018  INFO 26144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 15:09:11.027  INFO 26144 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 4.743 seconds (JVM running for 5.306)
-2024-10-13 15:09:15.092  INFO 26144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:09:15.093  INFO 26144 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 15:09:15.309  WARN 26144 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 15:09:15.309  INFO 26144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 15:09:15.314  INFO 26144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 15:22:48.522  INFO 6076 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 6076 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 15:22:48.525  INFO 6076 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 15:22:48.571  WARN 6076 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 15:22:48.571  WARN 6076 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 15:22:48.573  INFO 6076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 15:22:48.574  INFO 6076 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 15:22:49.290  INFO 6076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 15:22:49.367  INFO 6076 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
-2024-10-13 15:22:50.345  INFO 6076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 15:22:50.357  INFO 6076 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 15:22:50.358  INFO 6076 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 15:22:50.453  INFO 6076 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 15:22:50.454  INFO 6076 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1879 ms
-2024-10-13 15:22:50.504  INFO 6076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 15:22:50.699  INFO 6076 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 15:22:50.706  INFO 6076 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 15:22:50.902  INFO 6076 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 15:22:50.959  INFO 6076 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 15:22:51.097  INFO 6076 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 15:22:51.210  INFO 6076 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 15:22:51.899  INFO 6076 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 15:22:51.904  INFO 6076 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:22:52.496  INFO 6076 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@127d133b, org.springframework.security.web.context.SecurityContextPersistenceFilter@47c8794c, org.springframework.security.web.header.HeaderWriterFilter@7420756a, org.springframework.security.web.authentication.logout.LogoutFilter@6d1854c4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31cfe58e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@780d4237, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2978d89b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d572e85, org.springframework.security.web.session.SessionManagementFilter@dbf1bc8, org.springframework.security.web.access.ExceptionTranslationFilter@76f51871, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@79b3c749]
-2024-10-13 15:22:52.588  WARN 6076 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 15:22:53.263  WARN 6076 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2024-10-13 15:22:53.563  INFO 6076 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 15:22:53.594  INFO 6076 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 15:22:53.604  INFO 6076 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 5.633 seconds (JVM running for 6.213)
-2024-10-13 15:23:40.556  INFO 6076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 15:23:40.558  INFO 6076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 15:23:40.559  INFO 6076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 15:31:19.848  INFO 6076 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:31:19.848  INFO 6076 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 15:31:20.067  WARN 6076 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 15:31:20.068  INFO 6076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 15:31:20.072  INFO 6076 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 15:32:53.133  INFO 7556 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 7556 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 15:32:53.135  INFO 7556 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 15:32:53.189  WARN 7556 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 15:32:53.190  WARN 7556 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 15:32:53.191  INFO 7556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 15:32:53.192  INFO 7556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 15:32:53.941  INFO 7556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 15:32:54.010  INFO 7556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
-2024-10-13 15:32:55.010  INFO 7556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 15:32:55.024  INFO 7556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 15:32:55.024  INFO 7556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 15:32:55.119  INFO 7556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 15:32:55.119  INFO 7556 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1927 ms
-2024-10-13 15:32:55.174  INFO 7556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 15:32:55.357  INFO 7556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 15:32:55.363  INFO 7556 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 15:32:55.563  INFO 7556 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 15:32:55.619  INFO 7556 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 15:32:55.761  INFO 7556 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 15:32:55.885  INFO 7556 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 15:32:56.590  INFO 7556 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 15:32:56.596  INFO 7556 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:32:57.175  INFO 7556 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@60df1ea2, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b89c113, org.springframework.security.web.header.HeaderWriterFilter@7cf5cd10, org.springframework.security.web.authentication.logout.LogoutFilter@3f3c8f2a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32c9294, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@516298c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@278f0f9a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d058058, org.springframework.security.web.session.SessionManagementFilter@31d6a11, org.springframework.security.web.access.ExceptionTranslationFilter@2289f80a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@389cde95]
-2024-10-13 15:32:57.267  WARN 7556 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 15:32:57.897  WARN 7556 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2024-10-13 15:32:58.234  INFO 7556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 15:32:58.269  INFO 7556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 15:32:58.280  INFO 7556 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 5.686 seconds (JVM running for 6.289)
-2024-10-13 15:33:13.116  INFO 7556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 15:33:13.117  INFO 7556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 15:33:13.118  INFO 7556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 15:41:13.955  INFO 7556 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:41:13.955  INFO 7556 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 15:41:14.180  WARN 7556 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 15:41:14.181  INFO 7556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 15:41:14.185  INFO 7556 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
-2024-10-13 15:43:39.388  INFO 820 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 820 (D:\New_Java_Projects\taco-cloud\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
-2024-10-13 15:43:39.391  INFO 820 --- [restartedMain] ru.fenris06.TacoCloudApplication         : The following profiles are active: test
-2024-10-13 15:43:39.440  WARN 820 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
-2024-10-13 15:43:39.440  WARN 820 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
-2024-10-13 15:43:39.442  INFO 820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-10-13 15:43:39.442  INFO 820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-10-13 15:43:40.197  INFO 820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-13 15:43:40.263  INFO 820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
-2024-10-13 15:43:41.218  INFO 820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2024-10-13 15:43:41.231  INFO 820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-10-13 15:43:41.232  INFO 820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
-2024-10-13 15:43:41.326  INFO 820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-10-13 15:43:41.327  INFO 820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
-2024-10-13 15:43:41.380  INFO 820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
-2024-10-13 15:43:41.573  INFO 820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
-2024-10-13 15:43:41.579  INFO 820 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
-2024-10-13 15:43:41.782  INFO 820 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-13 15:43:41.837  INFO 820 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2024-10-13 15:43:41.972  INFO 820 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2024-10-13 15:43:42.113  INFO 820 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2024-10-13 15:43:42.814  INFO 820 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2024-10-13 15:43:42.821  INFO 820 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:43:43.460  INFO 820 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@154caf18, org.springframework.security.web.context.SecurityContextPersistenceFilter@5d01b420, org.springframework.security.web.header.HeaderWriterFilter@73cf31a2, org.springframework.security.web.authentication.logout.LogoutFilter@424dffb4, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3450e926, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a3e68c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7c343a50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73e05046, org.springframework.security.web.session.SessionManagementFilter@43aeb490, org.springframework.security.web.access.ExceptionTranslationFilter@3e4f77e8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a2cb45a]
-2024-10-13 15:43:43.530  WARN 820 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-13 15:43:44.184  WARN 820 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2024-10-13 15:43:44.483  INFO 820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-10-13 15:43:44.518  INFO 820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2024-10-13 15:43:44.529  INFO 820 --- [restartedMain] ru.fenris06.TacoCloudApplication         : Started TacoCloudApplication in 5.731 seconds (JVM running for 6.31)
-2024-10-13 15:43:52.478  INFO 820 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-13 15:43:52.480  INFO 820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-10-13 15:43:52.481  INFO 820 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2024-10-13 15:52:27.622  INFO 820 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-13 15:52:27.623  INFO 820 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
-2024-10-13 15:52:27.843  WARN 820 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: База данных уже закрыта (чтобы отключить автоматическое закрытие базы данных при останове JVM, добавьте ";DB_CLOSE_ON_EXIT=FALSE" в URL)
-Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
-2024-10-13 15:52:27.844  INFO 820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
-2024-10-13 15:52:27.849  INFO 820 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2024-11-23 11:27:29.540  INFO 9608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown initiated...
+2024-11-23 11:27:29.543  INFO 9608 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : tacocloud - Shutdown completed.
+2024-11-23 11:27:34.779  INFO 10888 --- [restartedMain] fenris06.TacoCloudApplication            : Starting TacoCloudApplication using Java 11.0.16.1 on LAPTOP-P3INO54K with PID 10888 (D:\New_Java_Projects\taco-cloud\taco-cloud-service\target\classes started by Артем in D:\New_Java_Projects\taco-cloud)
+2024-11-23 11:27:34.781  INFO 10888 --- [restartedMain] fenris06.TacoCloudApplication            : The following profiles are active: test
+2024-11-23 11:27:34.834  WARN 10888 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 25:13]
+2024-11-23 11:27:34.835  WARN 10888 --- [restartedMain] o.s.b.c.config.ConfigDataEnvironment     : Property 'spring.profiles' imported from location 'class path resource [application.yaml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yaml] - 10:13]
+2024-11-23 11:27:34.837  INFO 10888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-23 11:27:34.837  INFO 10888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-23 11:27:35.640  INFO 10888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-23 11:27:35.709  INFO 10888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2024-11-23 11:27:36.626  INFO 10888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-11-23 11:27:36.640  INFO 10888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-23 11:27:36.641  INFO 10888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2024-11-23 11:27:36.740  INFO 10888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-23 11:27:36.740  INFO 10888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1902 ms
+2024-11-23 11:27:36.796  INFO 10888 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Starting...
+2024-11-23 11:27:36.971  INFO 10888 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : tacocloud - Start completed.
+2024-11-23 11:27:36.979  INFO 10888 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:tacocloud'
+2024-11-23 11:27:37.251  INFO 10888 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-23 11:27:37.307  INFO 10888 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-11-23 11:27:37.440  INFO 10888 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-11-23 11:27:37.558  INFO 10888 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-11-23 11:27:38.311  INFO 10888 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-11-23 11:27:38.316  INFO 10888 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-23 11:27:38.968  WARN 10888 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-23 11:27:39.344  INFO 10888 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@395aeac4, org.springframework.security.web.context.SecurityContextPersistenceFilter@7840c663, org.springframework.security.web.header.HeaderWriterFilter@53d1de34, org.springframework.security.web.authentication.logout.LogoutFilter@5ce708c1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@551e03ab, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@533a30fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64e4d80c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3386baa0, org.springframework.security.web.session.SessionManagementFilter@25e8bf77, org.springframework.security.web.access.ExceptionTranslationFilter@5e339244, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@419800bb]
+2024-11-23 11:27:39.719  WARN 10888 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2024-11-23 11:27:40.027  INFO 10888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-11-23 11:27:40.059  INFO 10888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-11-23 11:27:40.070  INFO 10888 --- [restartedMain] fenris06.TacoCloudApplication            : Started TacoCloudApplication in 5.952 seconds (JVM running for 6.596)
+2024-11-23 11:27:41.873  INFO 10888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-23 11:27:41.875  INFO 10888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-23 11:27:41.876  INFO 10888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
