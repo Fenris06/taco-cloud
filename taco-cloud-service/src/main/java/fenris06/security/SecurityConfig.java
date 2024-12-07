@@ -4,6 +4,7 @@ import fenris06.model.User;
 import fenris06.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -42,6 +43,7 @@ public class SecurityConfig {
         return http
                 .authorizeRequests()
                 .antMatchers("/design", "/orders").access("hasRole('USER')")
+                .antMatchers(HttpMethod.GET, "/api/ingredients").hasRole("ADMIN")
                 .antMatchers("/", "/**", "/h2-console/**").access("permitAll")
                 .and()
                 .formLogin()
