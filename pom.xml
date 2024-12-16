@@ -6,6 +6,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>taco-cloud-service</module>
+        <module>ch9new</module>
+        <module>ch9new/taco-cloud-asik</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
