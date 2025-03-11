@@ -1,0 +1,18 @@
+spring:
+  main:
+    web-application-type: none
+tacocloud:
+  # end::tacocloudEmailConfig[]
+  api:
+    url: http://localhost:8080/orders/fromEmail
+  # end::tacocloudApiUrl[]
+  # tag::tacocloudEmailConfig[]
+  email:
+    host: imap.yandex.ru:993
+    #port: 993
+    mailbox: inbox
+    username: fenris06Programmer@yandex.ru
+    password: pmhtenuonxolgzpb
+    poll-rate: 10000
+
+# end::tacocloudEmailConfig[]
