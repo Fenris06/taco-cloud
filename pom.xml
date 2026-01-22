@@ -10,6 +10,7 @@
         <module>ch9new/taco-cloud-asik</module>
         <module>taco_email</module>
         <module>reactor-fun</module>
+        <module>taco-react</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

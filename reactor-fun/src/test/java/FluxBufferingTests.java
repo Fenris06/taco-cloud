@@ -2,6 +2,7 @@ import org.junit.jupiter.api.Test;
 import reactor.core.publisher.Flux;
 import reactor.test.StepVerifier;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -74,5 +75,38 @@ public class FluxBufferingTests {
                 .verifyComplete();
     }
 
+    @Test
+    public void createAFlux_interval() {
+        Flux<Long> intervalFlux = Flux.interval(Duration.ofSeconds(1))
+                .take(5);
+        StepVerifier.create(intervalFlux)
+                .expectNext(0L)
+                .expectNext(1L)
+                .expectNext(2L)
+                .expectNext(3L)
+                .expectNext(4L)
+                .verifyComplete();
+    }
+
+    @Test
+    public void mergeFlux() {
+        Flux<String> characterFlux = Flux
+                .just("Garfield", "Kojak", "Barbossa")
+                .delayElements(Duration.ofMillis(500));
+        Flux<String> foodFlux = Flux
+                .just("Lasagna", "Lollipops", "Apples")
+                .delaySubscription(Duration.ofMillis(250))
+                .delayElements(Duration.ofMillis(500));
+        Flux<String> mergeFlux = characterFlux.mergeWith(foodFlux);
+
+        StepVerifier.create(mergeFlux)
+                .expectNext("Garfield")
+                .expectNext("Lasagna")
+                .expectNext("Kojak")
+                .expectNext("Lollipops")
+                .expectNext("Barbossa")
+                .expectNext("Apples")
+                .verifyComplete();
+     }
 
 }
