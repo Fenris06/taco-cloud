@@ -1,3 +1,4 @@
+/*
 package fenris06.cofig;
 
 import fenris06.model.Taco;
@@ -52,5 +53,5 @@ public class RoutFunctionConfig {
     }
 
 
-
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package fenris06.model;
 
 import lombok.AccessLevel;
@@ -58,3 +59,4 @@ public class User implements UserDetails {
         return true;
     }
 }
+*/

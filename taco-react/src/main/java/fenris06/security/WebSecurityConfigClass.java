@@ -1,3 +1,4 @@
+/*
 package fenris06.security;
 
 import org.springframework.context.annotation.Bean;
@@ -21,3 +22,4 @@ public class WebSecurityConfigClass {
                 .build();
     }
 }
+*/

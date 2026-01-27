@@ -1,3 +1,4 @@
+/*
 package fenris06.security;
 
 import fenris06.model.User;
@@ -22,4 +23,4 @@ public class RegistrationForm {
                 fullname, street, city, state, zip, phone);
     }
 
-}
+}*/

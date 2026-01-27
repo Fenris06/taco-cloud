@@ -1,3 +1,4 @@
+/*
 package fenris06.utils;
 
 import fenris06.model.Ingredient;
@@ -84,3 +85,4 @@ public class DevelopmentConfig {
     }
 
 }
+*/
