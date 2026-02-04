@@ -8,6 +8,8 @@
     <file url="file://$PROJECT_DIR$/ch9new/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch9new/taco-cloud-asik/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reactor-fun/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rsocket/request-forget/client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rsocket/request-forget/server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rsocket/request-response/client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rsocket/request-response/server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rsocket/request-response/server/src/main/resources" charset="UTF-8" />
