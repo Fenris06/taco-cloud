@@ -11,6 +11,10 @@
         <module>taco_email</module>
         <module>reactor-fun</module>
         <module>taco-react</module>
+        <module>rsocket/request-response/client</module>
+        <module>rsocket/request-response/server</module>
+        <module>rsocket/request-stream/server</module>
+        <module>rsocket/request-stream/client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
