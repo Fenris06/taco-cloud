@@ -17,6 +17,8 @@
         <module>rsocket/request-stream/client</module>
         <module>rsocket/request-forget/server</module>
         <module>rsocket/request-forget/client</module>
+        <module>rsocket/request-chanel/server</module>
+        <module>rsocket/request-chanel/client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
