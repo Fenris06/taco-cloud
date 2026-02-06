@@ -1,0 +1,13 @@
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health, info, beans, conditions, env, mappings
+
+info:
+  contact:
+    email: fenris06@rambler.ru
+

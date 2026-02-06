@@ -19,6 +19,10 @@
         <module>rsocket/request-forget/client</module>
         <module>rsocket/request-chanel/server</module>
         <module>rsocket/request-chanel/client</module>
+        <module>rsocket/request-webflux/client</module>
+        <module>rsocket/request-webflux/server</module>
+        <module>actuator/admin-server</module>
+        <module>actuator/taco-cloud-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/actuator/admin-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/actuator/admin-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/actuator/taco-cloud-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/auth-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch9/src/main/java" charset="UTF-8" />
@@ -18,6 +21,8 @@
     <file url="file://$PROJECT_DIR$/rsocket/request-stream/client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rsocket/request-stream/client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rsocket/request-stream/server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rsocket/request-webflux/client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rsocket/request-webflux/server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rsocket/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
