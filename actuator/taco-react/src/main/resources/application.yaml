@@ -52,16 +52,3 @@ spring:
   data:
     rest:
       base-path: /data-api
-
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: health, info, beans, conditions, env, mappings, loggers, httptrace, metrics, threaddump, metrics
-
-info:
-  contact:
-    email: fenris06@rambler.ru

@@ -23,6 +23,7 @@
         <module>rsocket/request-webflux/server</module>
         <module>actuator/admin-server</module>
         <module>actuator/taco-cloud-service</module>
+        <module>actuator/taco-react</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
