@@ -53,22 +53,8 @@ spring:
     rest:
       base-path: /data-api
 
-  application:
-    name: taco-cloud
-  boot:
-    admin:
-      client:
-        url: http://localhost:8081
+  jmx:
+    enabled: true
 
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: health, info, beans, conditions, env, mappings, loggers, httptrace, metrics, threaddump, metrics
 
-info:
-  contact:
-    email: fenris06@rambler.ru
+

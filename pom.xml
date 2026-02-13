@@ -24,6 +24,7 @@
         <module>actuator/admin-server</module>
         <module>actuator/taco-cloud-service</module>
         <module>actuator/taco-react</module>
+        <module>actuator-jmx/taco-cloud-service</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

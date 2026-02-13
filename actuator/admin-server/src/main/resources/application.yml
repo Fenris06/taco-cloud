@@ -1,13 +1,7 @@
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: health, info, beans, conditions, env, mappings
+server:
+  port: 8081
 
-info:
-  contact:
-    email: fenris06@rambler.ru
-
+spring:
+  security:
+    user: admin
+    password: password
